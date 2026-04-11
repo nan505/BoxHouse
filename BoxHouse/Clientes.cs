@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,5 +19,7 @@ namespace BoxHouse
             TelefoneCliente = telefoneCliente;
             NomePetCliente = nomePetCliente;
         }
+
+        BindingList<Clientes> clientesCadastrados = new BindingList<Clientes>();
     }
 }

@@ -14,6 +14,8 @@ namespace BoxHouse
     {
         BindingList<Produtos> listaProdutos = new BindingList<Produtos>();
         BindingList<Produtos> inventarioProdutos = new BindingList<Produtos>();
+
+        double valorTotal = 0;
         public FormVendas()
         {
             InitializeComponent();
@@ -44,7 +46,6 @@ namespace BoxHouse
             {
                 var locProduto = inventarioProdutos.FirstOrDefault(p => p.NomeProduto == nomeProduto);
                 double valorProduto = locProduto.ValorProduto;
-                double valorTotal = 0;
 
                 Produtos produtoAdicionado = new Produtos(nomeProduto, valorProduto, qtdProduto);
 
