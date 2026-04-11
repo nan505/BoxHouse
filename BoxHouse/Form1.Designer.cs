@@ -32,6 +32,8 @@
             this.lbTitulo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClientes = new System.Windows.Forms.Button();
+            this.btnFuncionarios = new System.Windows.Forms.Button();
+            this.btnEntregas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVendas
@@ -39,7 +41,7 @@
             this.btnVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendas.Location = new System.Drawing.Point(199, 231);
             this.btnVendas.Name = "btnVendas";
-            this.btnVendas.Size = new System.Drawing.Size(105, 34);
+            this.btnVendas.Size = new System.Drawing.Size(152, 34);
             this.btnVendas.TabIndex = 0;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.UseVisualStyleBackColor = true;
@@ -68,19 +70,43 @@
             // btnClientes
             // 
             this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.Location = new System.Drawing.Point(310, 231);
+            this.btnClientes.Location = new System.Drawing.Point(357, 231);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(110, 34);
+            this.btnClientes.Size = new System.Drawing.Size(126, 34);
             this.btnClientes.TabIndex = 3;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // btnFuncionarios
+            // 
+            this.btnFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFuncionarios.Location = new System.Drawing.Point(199, 271);
+            this.btnFuncionarios.Name = "btnFuncionarios";
+            this.btnFuncionarios.Size = new System.Drawing.Size(152, 37);
+            this.btnFuncionarios.TabIndex = 4;
+            this.btnFuncionarios.Text = "Funcionários";
+            this.btnFuncionarios.UseVisualStyleBackColor = true;
+            this.btnFuncionarios.Click += new System.EventHandler(this.btnFuncionarios_Click);
+            // 
+            // btnEntregas
+            // 
+            this.btnEntregas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntregas.Location = new System.Drawing.Point(357, 271);
+            this.btnEntregas.Name = "btnEntregas";
+            this.btnEntregas.Size = new System.Drawing.Size(126, 37);
+            this.btnEntregas.TabIndex = 5;
+            this.btnEntregas.Text = "Entregas";
+            this.btnEntregas.UseVisualStyleBackColor = true;
+            this.btnEntregas.Click += new System.EventHandler(this.btnEntregas_Click);
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEntregas);
+            this.Controls.Add(this.btnFuncionarios);
             this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbTitulo);
@@ -98,6 +124,8 @@
         private System.Windows.Forms.Label lbTitulo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnFuncionarios;
+        private System.Windows.Forms.Button btnEntregas;
     }
 }
 

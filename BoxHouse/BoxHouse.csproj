@@ -59,12 +59,25 @@
     <Compile Include="FormClientes.Designer.cs">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEntregas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEntregas.Designer.cs">
+      <DependentUpon>FormEntregas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFuncionarios.Designer.cs">
+      <DependentUpon>FormFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVendas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormVendas.Designer.cs">
       <DependentUpon>FormVendas.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListaClientes.cs" />
     <Compile Include="Produtos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,6 +86,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClientes.resx">
       <DependentUpon>FormClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntregas.resx">
+      <DependentUpon>FormEntregas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFuncionarios.resx">
+      <DependentUpon>FormFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVendas.resx">
       <DependentUpon>FormVendas.cs</DependentUpon>

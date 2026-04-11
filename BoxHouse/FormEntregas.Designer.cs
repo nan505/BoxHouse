@@ -1,6 +1,6 @@
 ﻿namespace BoxHouse
 {
-    partial class FormFuncionarios
+    partial class FormEntregas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvFuncionarios = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).BeginInit();
+            this.cbClientesCadastrados = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // dgvFuncionarios
+            // cbClientesCadastrados
             // 
-            this.dgvFuncionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFuncionarios.Location = new System.Drawing.Point(264, 214);
-            this.dgvFuncionarios.Name = "dgvFuncionarios";
-            this.dgvFuncionarios.Size = new System.Drawing.Size(240, 150);
-            this.dgvFuncionarios.TabIndex = 0;
+            this.cbClientesCadastrados.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbClientesCadastrados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbClientesCadastrados.FormattingEnabled = true;
+            this.cbClientesCadastrados.Location = new System.Drawing.Point(46, 67);
+            this.cbClientesCadastrados.Name = "cbClientesCadastrados";
+            this.cbClientesCadastrados.Size = new System.Drawing.Size(200, 28);
+            this.cbClientesCadastrados.TabIndex = 0;
             // 
-            // FormFuncionarios
+            // FormEntregas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvFuncionarios);
-            this.Name = "FormFuncionarios";
-            this.Text = "Box House - Funcionários";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();
+            this.Controls.Add(this.cbClientesCadastrados);
+            this.Name = "FormEntregas";
+            this.Text = "FormEntregas";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvFuncionarios;
+        private System.Windows.Forms.ComboBox cbClientesCadastrados;
     }
 }

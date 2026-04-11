@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BoxHouse
 {
-    internal class Clientes
+    public class Clientes
     {
         public string NomeCliente { get; set; }
         public string TelefoneCliente { get; set; }
@@ -19,7 +19,5 @@ namespace BoxHouse
             TelefoneCliente = telefoneCliente;
             NomePetCliente = nomePetCliente;
         }
-
-        BindingList<Clientes> clientesCadastrados = new BindingList<Clientes>();
     }
 }

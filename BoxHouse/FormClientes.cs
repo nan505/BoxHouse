@@ -12,16 +12,11 @@ namespace BoxHouse
 {
     public partial class FormClientes : Form
     {
-        BindingList<Clientes> clientesCadastrados = new BindingList<Clientes>();
+        BindingList<Clientes> clientesCadastrados = ListaClientes.ClientesCadastrados;
+
         public FormClientes()
         {
             InitializeComponent();
-
-            Clientes c1 = new Clientes("Paulo", "(19) 99999-9999", "Cavalo Caixa");
-            Clientes c2 = new Clientes("Guto", "(19) 99999-9998", "Yorkshireson");
-
-            clientesCadastrados.Add(c1);
-            clientesCadastrados.Add(c2);
 
             dgvClientesCadastrados.DataSource = clientesCadastrados;
         }
