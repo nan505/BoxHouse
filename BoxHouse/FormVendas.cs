@@ -14,45 +14,54 @@ namespace BoxHouse
     {
         BindingList<Produtos> listaProdutos = new BindingList<Produtos>();
         BindingList<Produtos> inventarioProdutos = new BindingList<Produtos>();
-        double valorTotal;
-        double qtdProduto;
         public FormVendas()
         {
             InitializeComponent();
 
-            Produtos p1 = new Produtos("Ração de cachorro", 12.99);
-            Produtos p2 = new Produtos("Coleira pequena", 24.49);
-            Produtos p3 = new Produtos("Petisco genérico", 14.99);
+            Produtos p1 = new Produtos("Ração de cachorro", 12.99, 1);
+            Produtos p2 = new Produtos("Coleira pequena", 24.49, 1);
+            Produtos p3 = new Produtos("Petisco genérico", 14.99, 1);
 
             inventarioProdutos.Add(p1);
             inventarioProdutos.Add(p2);
             inventarioProdutos.Add(p3);
+
+            dgvProdutosAdicionados.DataSource = listaProdutos;
+        }
+
+        private void fnLimparForms()
+        {
+            cbSelecionarProdutos.SelectedIndex = -1;
+            numQuantidade.Value = 1;
         }
 
         private void btnAddProdutos_Click(object sender, EventArgs e)
         {
             string nomeProduto = cbSelecionarProdutos.Text;
+            int qtdProduto = (int)numQuantidade.Value;
 
-            if (nomeProduto != string.Empty)
+            if (nomeProduto != string.Empty && qtdProduto > 0)
             {
-                qtdProduto = (int)numQuantidade.Value;
                 var locProduto = inventarioProdutos.FirstOrDefault(p => p.NomeProduto == nomeProduto);
                 double valorProduto = locProduto.ValorProduto;
+                double valorTotal = 0;
 
-                Produtos produtoAdicionado = new Produtos(nomeProduto, valorProduto);
+                Produtos produtoAdicionado = new Produtos(nomeProduto, valorProduto, qtdProduto);
 
                 listaProdutos.Add(produtoAdicionado);
-                valorTotal = listaProdutos.Sum(p => p.ValorProduto);
+                valorTotal = valorTotal + (valorProduto * qtdProduto);
 
-                var dgvProdutos = listaProdutos.Select(p => new
-                {
-                    nomeProduto = p.NomeProduto,
-                    valorProduto = p.ValorProduto,
-                    qtdProduto = qtdProduto
-                }).ToList();
+                lbValorTotal.Text = $"R${valorTotal.ToString("F2")}";
 
-                dgvProdutosAdicionados.DataSource = dgvProdutos;
+                fnLimparForms();
+
                 dgvProdutosAdicionados.Refresh();
+
+                produtoAdicionado.fnMsgAddProduto();
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os campos corretamente.", "Mensagem de Aviso");
             }
         }
     }

@@ -23,5 +23,12 @@ namespace BoxHouse
 
             formVendas.ShowDialog();
         }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            FormClientes formClientes = new FormClientes();
+
+            formClientes.ShowDialog();
+        }
     }
 }

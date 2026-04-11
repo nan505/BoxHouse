@@ -34,6 +34,8 @@
             this.lbSelecionarProdutos = new System.Windows.Forms.Label();
             this.lbQuantidade = new System.Windows.Forms.Label();
             this.dgvProdutosAdicionados = new System.Windows.Forms.DataGridView();
+            this.lbValorTexto = new System.Windows.Forms.Label();
+            this.lbValorTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutosAdicionados)).BeginInit();
             this.SuspendLayout();
@@ -107,11 +109,33 @@
             this.dgvProdutosAdicionados.Size = new System.Drawing.Size(405, 227);
             this.dgvProdutosAdicionados.TabIndex = 5;
             // 
+            // lbValorTexto
+            // 
+            this.lbValorTexto.AutoSize = true;
+            this.lbValorTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbValorTexto.Location = new System.Drawing.Point(383, 251);
+            this.lbValorTexto.Name = "lbValorTexto";
+            this.lbValorTexto.Size = new System.Drawing.Size(115, 25);
+            this.lbValorTexto.TabIndex = 6;
+            this.lbValorTexto.Text = "Valor total:";
+            // 
+            // lbValorTotal
+            // 
+            this.lbValorTotal.AutoSize = true;
+            this.lbValorTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbValorTotal.Location = new System.Drawing.Point(504, 251);
+            this.lbValorTotal.Name = "lbValorTotal";
+            this.lbValorTotal.Size = new System.Drawing.Size(87, 25);
+            this.lbValorTotal.TabIndex = 7;
+            this.lbValorTotal.Text = "R$0,00";
+            // 
             // FormVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbValorTotal);
+            this.Controls.Add(this.lbValorTexto);
             this.Controls.Add(this.dgvProdutosAdicionados);
             this.Controls.Add(this.lbQuantidade);
             this.Controls.Add(this.lbSelecionarProdutos);
@@ -135,5 +159,7 @@
         private System.Windows.Forms.Label lbSelecionarProdutos;
         private System.Windows.Forms.Label lbQuantidade;
         private System.Windows.Forms.DataGridView dgvProdutosAdicionados;
+        private System.Windows.Forms.Label lbValorTexto;
+        private System.Windows.Forms.Label lbValorTotal;
     }
 }
