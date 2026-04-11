@@ -1,0 +1,11 @@
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\bin\Debug\BoxHouse.exe.config
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\bin\Debug\BoxHouse.exe
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\bin\Debug\BoxHouse.pdb
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.csproj.AssemblyReference.cache
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.FormPrincipal.resources
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.Properties.Resources.resources
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.csproj.GenerateResource.cache
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.csproj.CoreCompileInputs.cache
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.exe
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.pdb
+C:\Users\renan.srfranca\source\repos\BoxHouse\BoxHouse\obj\Debug\BoxHouse.FormVendas.resources
