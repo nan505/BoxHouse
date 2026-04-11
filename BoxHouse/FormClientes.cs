@@ -19,6 +19,8 @@ namespace BoxHouse
             InitializeComponent();
 
             dgvClientesCadastrados.DataSource = clientesCadastrados;
+
+            tBoxNomeCliente.Focus();
         }
 
         private void fnLimparForms()
@@ -26,6 +28,8 @@ namespace BoxHouse
             tBoxNomeCliente.Text = "";
             mTBoxTelefone.Text = "";
             tBoxNomePetCliente.Text = "";
+
+            tBoxNomeCliente.Focus();
         }
 
         private void btnCadastrarCliente_Click(object sender, EventArgs e)
@@ -34,7 +38,7 @@ namespace BoxHouse
             string telefoneCliente = mTBoxTelefone.Text;
             string nomePetCliente = tBoxNomePetCliente.Text;
 
-            bool nomeClienteJaFoiCadastrado = clientesCadastrados.Any(p => p.NomeCliente == nomeCliente);
+            bool nomeClienteJaFoiCadastrado = clientesCadastrados.Any(p => p.NomeCliente.ToLower() == nomeCliente.ToLower());
             bool telefoneClienteJaFoiCadastrado = clientesCadastrados.Any(p => p.TelefoneCliente == telefoneCliente);
 
             if (nomeCliente != string.Empty && telefoneCliente.Length == 15 && nomePetCliente != string.Empty)
@@ -68,7 +72,7 @@ namespace BoxHouse
             
             if(pesquisaInicial != string.Empty)
             {
-                var filtroPesquisa = clientesCadastrados.Where(p => p.NomeCliente.Contains(pesquisaInicial)).ToList();
+                var filtroPesquisa = clientesCadastrados.Where(p => p.NomeCliente.ToLower().Contains(pesquisaInicial.ToLower())).ToList();
                 dgvClientesCadastrados.DataSource = filtroPesquisa;
             }
             else
