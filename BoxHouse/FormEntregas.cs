@@ -129,5 +129,13 @@ namespace BoxHouse
         {
             fnLimparForms();
         }
+
+        private void dgvEntregasCadastradas_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dgvEntregasCadastradas.Columns["NomeClienteEntrega"].HeaderText = "Nome do cliente";
+            dgvEntregasCadastradas.Columns["EnderecoEntrega"].HeaderText = "Endereço de entrega";
+            dgvEntregasCadastradas.Columns["DataPedidoRealizado"].HeaderText = "Data da compra";
+            dgvEntregasCadastradas.Columns["StatusEntrega"].HeaderText = "Status do pedido";
+        }
     }
 }

@@ -96,5 +96,11 @@ namespace BoxHouse
         {
             fnLimparForms();
         }
+
+        private void dgvFuncionarios_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dgvFuncionarios.Columns["NomeFuncionario"].HeaderText = "Nome do funcionário";
+            dgvFuncionarios.Columns["CargoFuncionario"].HeaderText = "Cargo atribuído";
+        }
     }
 }

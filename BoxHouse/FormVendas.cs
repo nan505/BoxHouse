@@ -122,5 +122,12 @@ namespace BoxHouse
                     "Mensagem de Aviso");
             }
         }
+
+        private void dgvProdutosAdicionados_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dgvProdutosAdicionados.Columns["NomeProduto"].HeaderText = "Nome do produto";
+            dgvProdutosAdicionados.Columns["ValorProduto"].HeaderText = "Valor unitário";
+            dgvProdutosAdicionados.Columns["QtdProduto"].HeaderText = "Quantidade";
+        }
     }
 }

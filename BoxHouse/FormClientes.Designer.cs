@@ -115,6 +115,7 @@
             this.dgvClientesCadastrados.Name = "dgvClientesCadastrados";
             this.dgvClientesCadastrados.Size = new System.Drawing.Size(397, 239);
             this.dgvClientesCadastrados.TabIndex = 7;
+            this.dgvClientesCadastrados.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvClientesCadastrados_DataBindingComplete);
             // 
             // tBoxPesquisar
             // 

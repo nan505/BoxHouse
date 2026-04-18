@@ -86,5 +86,12 @@ namespace BoxHouse
         {
             fnLimparForms();
         }
+
+        private void dgvClientesCadastrados_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dgvClientesCadastrados.Columns["NomeCliente"].HeaderText = "Nome do cliente";
+            dgvClientesCadastrados.Columns["TelefoneCliente"].HeaderText = "Número de telefone";
+            dgvClientesCadastrados.Columns["NomePetCliente"].HeaderText = "Nome do pet";
+        }
     }
 }

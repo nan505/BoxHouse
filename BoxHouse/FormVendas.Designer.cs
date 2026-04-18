@@ -119,6 +119,7 @@
             this.dgvProdutosAdicionados.Name = "dgvProdutosAdicionados";
             this.dgvProdutosAdicionados.Size = new System.Drawing.Size(355, 227);
             this.dgvProdutosAdicionados.TabIndex = 5;
+            this.dgvProdutosAdicionados.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvProdutosAdicionados_DataBindingComplete);
             // 
             // lbValorTexto
             // 

@@ -113,6 +113,7 @@
             this.dgvEntregasCadastradas.Name = "dgvEntregasCadastradas";
             this.dgvEntregasCadastradas.Size = new System.Drawing.Size(601, 190);
             this.dgvEntregasCadastradas.TabIndex = 6;
+            this.dgvEntregasCadastradas.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvEntregasCadastradas_DataBindingComplete);
             // 
             // btnAddEntrega
             // 
