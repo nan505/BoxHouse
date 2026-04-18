@@ -124,5 +124,10 @@ namespace BoxHouse
         {
             dgvEntregasCadastradas.DataSource = ListaEntregas.EntregasCadastradas;
         }
+
+        private void btnLimparForms_Click(object sender, EventArgs e)
+        {
+            fnLimparForms();
+        }
     }
 }

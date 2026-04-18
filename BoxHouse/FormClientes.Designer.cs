@@ -40,6 +40,7 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.gbCadastroCliente = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLimparForms = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientesCadastrados)).BeginInit();
             this.gbCadastroCliente.SuspendLayout();
             this.SuspendLayout();
@@ -136,6 +137,7 @@
             // 
             // gbCadastroCliente
             // 
+            this.gbCadastroCliente.Controls.Add(this.btnLimparForms);
             this.gbCadastroCliente.Controls.Add(this.tBoxNomeCliente);
             this.gbCadastroCliente.Controls.Add(this.lbNomeCliente);
             this.gbCadastroCliente.Controls.Add(this.mTBoxTelefone);
@@ -160,6 +162,16 @@
             this.label1.Size = new System.Drawing.Size(272, 18);
             this.label1.TabIndex = 11;
             this.label1.Text = "Digite o nome do cliente para pesquisar:";
+            // 
+            // btnLimparForms
+            // 
+            this.btnLimparForms.Location = new System.Drawing.Point(195, 261);
+            this.btnLimparForms.Name = "btnLimparForms";
+            this.btnLimparForms.Size = new System.Drawing.Size(128, 35);
+            this.btnLimparForms.TabIndex = 7;
+            this.btnLimparForms.Text = "Limpar campos";
+            this.btnLimparForms.UseVisualStyleBackColor = true;
+            this.btnLimparForms.Click += new System.EventHandler(this.btnLimparForms_Click);
             // 
             // FormClientes
             // 
@@ -195,5 +207,6 @@
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.GroupBox gbCadastroCliente;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLimparForms;
     }
 }

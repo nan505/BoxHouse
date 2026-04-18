@@ -78,6 +78,8 @@ namespace BoxHouse
             cbSelecionarCliente.SelectedIndex = -1;
             tBoxEnderecoCliente.Text = string.Empty;
             dgvProdutosAdicionados.Refresh();
+            valorTotal = 0;
+            lbValorTotal.Text = "R$0,00";
         }
 
         private void btnFinalizarPedido_Click(object sender, EventArgs e)

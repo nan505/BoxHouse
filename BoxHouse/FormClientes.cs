@@ -81,5 +81,10 @@ namespace BoxHouse
             }
 
         }
+
+        private void btnLimparForms_Click(object sender, EventArgs e)
+        {
+            fnLimparForms();
+        }
     }
 }

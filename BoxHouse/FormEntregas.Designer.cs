@@ -40,8 +40,9 @@
             this.btnFiltroStatus = new System.Windows.Forms.Button();
             this.btnResetarFiltro = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbDataTexto = new System.Windows.Forms.Label();
             this.lbDataAtual = new System.Windows.Forms.Label();
+            this.lbDataTexto = new System.Windows.Forms.Label();
+            this.btnLimparForms = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntregasCadastradas)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -159,6 +160,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnLimparForms);
             this.groupBox1.Controls.Add(this.lbDataAtual);
             this.groupBox1.Controls.Add(this.lbDataTexto);
             this.groupBox1.Controls.Add(this.cbStatusEntrega);
@@ -179,6 +181,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gerenciamento de entregas:";
             // 
+            // lbDataAtual
+            // 
+            this.lbDataAtual.AutoSize = true;
+            this.lbDataAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDataAtual.Location = new System.Drawing.Point(470, 199);
+            this.lbDataAtual.Name = "lbDataAtual";
+            this.lbDataAtual.Size = new System.Drawing.Size(99, 20);
+            this.lbDataAtual.TabIndex = 12;
+            this.lbDataAtual.Text = "dd/MM/yyyy";
+            // 
             // lbDataTexto
             // 
             this.lbDataTexto.AutoSize = true;
@@ -189,15 +201,16 @@
             this.lbDataTexto.TabIndex = 11;
             this.lbDataTexto.Text = "Data atual:";
             // 
-            // lbDataAtual
+            // btnLimparForms
             // 
-            this.lbDataAtual.AutoSize = true;
-            this.lbDataAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDataAtual.Location = new System.Drawing.Point(470, 199);
-            this.lbDataAtual.Name = "lbDataAtual";
-            this.lbDataAtual.Size = new System.Drawing.Size(99, 20);
-            this.lbDataAtual.TabIndex = 12;
-            this.lbDataAtual.Text = "dd/MM/yyyy";
+            this.btnLimparForms.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimparForms.Location = new System.Drawing.Point(203, 194);
+            this.btnLimparForms.Name = "btnLimparForms";
+            this.btnLimparForms.Size = new System.Drawing.Size(128, 30);
+            this.btnLimparForms.TabIndex = 13;
+            this.btnLimparForms.Text = "Limpar campos";
+            this.btnLimparForms.UseVisualStyleBackColor = true;
+            this.btnLimparForms.Click += new System.EventHandler(this.btnLimparForms_Click);
             // 
             // FormEntregas
             // 
@@ -231,5 +244,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lbDataTexto;
         private System.Windows.Forms.Label lbDataAtual;
+        private System.Windows.Forms.Button btnLimparForms;
     }
 }

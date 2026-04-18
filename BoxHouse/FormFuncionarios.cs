@@ -91,5 +91,10 @@ namespace BoxHouse
                 MessageBox.Show("Selecione uma linha e/ou informe um valor de vendas válido.", "Mensagem de Aviso");
             }
         }
+
+        private void btnLimparForms_Click(object sender, EventArgs e)
+        {
+            fnLimparForms();
+        }
     }
 }

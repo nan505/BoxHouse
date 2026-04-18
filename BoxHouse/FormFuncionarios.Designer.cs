@@ -39,6 +39,7 @@
             this.lbValorVendas = new System.Windows.Forms.Label();
             this.gbCadastrarFuncionario = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnLimparForms = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numValorVendas)).BeginInit();
             this.gbCadastrarFuncionario.SuspendLayout();
@@ -96,7 +97,7 @@
             // btnCadastrarFuncionario
             // 
             this.btnCadastrarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(180, 174);
+            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(48, 174);
             this.btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
             this.btnCadastrarFuncionario.Size = new System.Drawing.Size(212, 34);
             this.btnCadastrarFuncionario.TabIndex = 5;
@@ -141,6 +142,7 @@
             // 
             // gbCadastrarFuncionario
             // 
+            this.gbCadastrarFuncionario.Controls.Add(this.btnLimparForms);
             this.gbCadastrarFuncionario.Controls.Add(this.cbCargoFuncionario);
             this.gbCadastrarFuncionario.Controls.Add(this.tBoxNomeFuncionario);
             this.gbCadastrarFuncionario.Controls.Add(this.lbNomeFuncionario);
@@ -166,6 +168,16 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cálculo de comissão";
+            // 
+            // btnLimparForms
+            // 
+            this.btnLimparForms.Location = new System.Drawing.Point(266, 174);
+            this.btnLimparForms.Name = "btnLimparForms";
+            this.btnLimparForms.Size = new System.Drawing.Size(126, 34);
+            this.btnLimparForms.TabIndex = 6;
+            this.btnLimparForms.Text = "Limpar campos";
+            this.btnLimparForms.UseVisualStyleBackColor = true;
+            this.btnLimparForms.Click += new System.EventHandler(this.btnLimparForms_Click);
             // 
             // FormFuncionarios
             // 
@@ -200,5 +212,6 @@
         private System.Windows.Forms.Label lbValorVendas;
         private System.Windows.Forms.GroupBox gbCadastrarFuncionario;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnLimparForms;
     }
 }
