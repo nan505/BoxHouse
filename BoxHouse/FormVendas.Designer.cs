@@ -39,10 +39,12 @@
             this.gbAdicionarProdutos = new System.Windows.Forms.GroupBox();
             this.cbSelecionarCliente = new System.Windows.Forms.ComboBox();
             this.gbFinalizarPedido = new System.Windows.Forms.GroupBox();
-            this.lbSelecionarCliente = new System.Windows.Forms.Label();
-            this.btnFinalizarPedido = new System.Windows.Forms.Button();
-            this.tBoxEnderecoCliente = new System.Windows.Forms.TextBox();
             this.lbEnderecoCliente = new System.Windows.Forms.Label();
+            this.tBoxEnderecoCliente = new System.Windows.Forms.TextBox();
+            this.btnFinalizarPedido = new System.Windows.Forms.Button();
+            this.lbSelecionarCliente = new System.Windows.Forms.Label();
+            this.lbDataTexto = new System.Windows.Forms.Label();
+            this.lbDataAtual = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutosAdicionados)).BeginInit();
             this.gbAdicionarProdutos.SuspendLayout();
@@ -58,7 +60,7 @@
             "Ração de cachorro",
             "Coleira pequena",
             "Petisco genérico"});
-            this.cbSelecionarProdutos.Location = new System.Drawing.Point(6, 46);
+            this.cbSelecionarProdutos.Location = new System.Drawing.Point(9, 47);
             this.cbSelecionarProdutos.Name = "cbSelecionarProdutos";
             this.cbSelecionarProdutos.Size = new System.Drawing.Size(205, 28);
             this.cbSelecionarProdutos.TabIndex = 0;
@@ -66,7 +68,7 @@
             // numQuantidade
             // 
             this.numQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numQuantidade.Location = new System.Drawing.Point(6, 102);
+            this.numQuantidade.Location = new System.Drawing.Point(9, 103);
             this.numQuantidade.Minimum = new decimal(new int[] {
             1,
             0,
@@ -84,9 +86,9 @@
             // btnAddProdutos
             // 
             this.btnAddProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProdutos.Location = new System.Drawing.Point(584, 144);
+            this.btnAddProdutos.Location = new System.Drawing.Point(541, 136);
             this.btnAddProdutos.Name = "btnAddProdutos";
-            this.btnAddProdutos.Size = new System.Drawing.Size(154, 37);
+            this.btnAddProdutos.Size = new System.Drawing.Size(154, 31);
             this.btnAddProdutos.TabIndex = 2;
             this.btnAddProdutos.Text = "Adicionar item";
             this.btnAddProdutos.UseVisualStyleBackColor = true;
@@ -95,7 +97,7 @@
             // lbSelecionarProdutos
             // 
             this.lbSelecionarProdutos.AutoSize = true;
-            this.lbSelecionarProdutos.Location = new System.Drawing.Point(3, 27);
+            this.lbSelecionarProdutos.Location = new System.Drawing.Point(6, 28);
             this.lbSelecionarProdutos.Name = "lbSelecionarProdutos";
             this.lbSelecionarProdutos.Size = new System.Drawing.Size(131, 16);
             this.lbSelecionarProdutos.TabIndex = 3;
@@ -104,7 +106,7 @@
             // lbQuantidade
             // 
             this.lbQuantidade.AutoSize = true;
-            this.lbQuantidade.Location = new System.Drawing.Point(3, 83);
+            this.lbQuantidade.Location = new System.Drawing.Point(6, 84);
             this.lbQuantidade.Name = "lbQuantidade";
             this.lbQuantidade.Size = new System.Drawing.Size(226, 16);
             this.lbQuantidade.TabIndex = 4;
@@ -115,14 +117,14 @@
             this.dgvProdutosAdicionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProdutosAdicionados.Location = new System.Drawing.Point(28, 211);
             this.dgvProdutosAdicionados.Name = "dgvProdutosAdicionados";
-            this.dgvProdutosAdicionados.Size = new System.Drawing.Size(405, 227);
+            this.dgvProdutosAdicionados.Size = new System.Drawing.Size(355, 227);
             this.dgvProdutosAdicionados.TabIndex = 5;
             // 
             // lbValorTexto
             // 
             this.lbValorTexto.AutoSize = true;
             this.lbValorTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbValorTexto.Location = new System.Drawing.Point(439, 211);
+            this.lbValorTexto.Location = new System.Drawing.Point(399, 211);
             this.lbValorTexto.Name = "lbValorTexto";
             this.lbValorTexto.Size = new System.Drawing.Size(115, 25);
             this.lbValorTexto.TabIndex = 6;
@@ -132,7 +134,7 @@
             // 
             this.lbValorTotal.AutoSize = true;
             this.lbValorTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbValorTotal.Location = new System.Drawing.Point(560, 211);
+            this.lbValorTotal.Location = new System.Drawing.Point(520, 211);
             this.lbValorTotal.Name = "lbValorTotal";
             this.lbValorTotal.Size = new System.Drawing.Size(87, 25);
             this.lbValorTotal.TabIndex = 7;
@@ -146,9 +148,9 @@
             this.gbAdicionarProdutos.Controls.Add(this.lbQuantidade);
             this.gbAdicionarProdutos.Controls.Add(this.btnAddProdutos);
             this.gbAdicionarProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAdicionarProdutos.Location = new System.Drawing.Point(28, 18);
+            this.gbAdicionarProdutos.Location = new System.Drawing.Point(28, 32);
             this.gbAdicionarProdutos.Name = "gbAdicionarProdutos";
-            this.gbAdicionarProdutos.Size = new System.Drawing.Size(744, 187);
+            this.gbAdicionarProdutos.Size = new System.Drawing.Size(701, 173);
             this.gbAdicionarProdutos.TabIndex = 8;
             this.gbAdicionarProdutos.TabStop = false;
             this.gbAdicionarProdutos.Text = "Seleção de produtos:";
@@ -170,21 +172,29 @@
             this.gbFinalizarPedido.Controls.Add(this.lbSelecionarCliente);
             this.gbFinalizarPedido.Controls.Add(this.cbSelecionarCliente);
             this.gbFinalizarPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbFinalizarPedido.Location = new System.Drawing.Point(447, 253);
+            this.gbFinalizarPedido.Location = new System.Drawing.Point(404, 253);
             this.gbFinalizarPedido.Name = "gbFinalizarPedido";
             this.gbFinalizarPedido.Size = new System.Drawing.Size(325, 185);
             this.gbFinalizarPedido.TabIndex = 9;
             this.gbFinalizarPedido.TabStop = false;
             this.gbFinalizarPedido.Text = "Finalize o pedido:";
             // 
-            // lbSelecionarCliente
+            // lbEnderecoCliente
             // 
-            this.lbSelecionarCliente.AutoSize = true;
-            this.lbSelecionarCliente.Location = new System.Drawing.Point(6, 28);
-            this.lbSelecionarCliente.Name = "lbSelecionarCliente";
-            this.lbSelecionarCliente.Size = new System.Drawing.Size(107, 16);
-            this.lbSelecionarCliente.TabIndex = 6;
-            this.lbSelecionarCliente.Text = "Informe o cliente:";
+            this.lbEnderecoCliente.AutoSize = true;
+            this.lbEnderecoCliente.Location = new System.Drawing.Point(6, 83);
+            this.lbEnderecoCliente.Name = "lbEnderecoCliente";
+            this.lbEnderecoCliente.Size = new System.Drawing.Size(252, 16);
+            this.lbEnderecoCliente.TabIndex = 9;
+            this.lbEnderecoCliente.Text = "Informe o endereço do cliente (Opcional):";
+            // 
+            // tBoxEnderecoCliente
+            // 
+            this.tBoxEnderecoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBoxEnderecoCliente.Location = new System.Drawing.Point(6, 102);
+            this.tBoxEnderecoCliente.Name = "tBoxEnderecoCliente";
+            this.tBoxEnderecoCliente.Size = new System.Drawing.Size(283, 26);
+            this.tBoxEnderecoCliente.TabIndex = 8;
             // 
             // btnFinalizarPedido
             // 
@@ -197,28 +207,42 @@
             this.btnFinalizarPedido.UseVisualStyleBackColor = true;
             this.btnFinalizarPedido.Click += new System.EventHandler(this.btnFinalizarPedido_Click);
             // 
-            // tBoxEnderecoCliente
+            // lbSelecionarCliente
             // 
-            this.tBoxEnderecoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBoxEnderecoCliente.Location = new System.Drawing.Point(6, 102);
-            this.tBoxEnderecoCliente.Name = "tBoxEnderecoCliente";
-            this.tBoxEnderecoCliente.Size = new System.Drawing.Size(283, 26);
-            this.tBoxEnderecoCliente.TabIndex = 8;
+            this.lbSelecionarCliente.AutoSize = true;
+            this.lbSelecionarCliente.Location = new System.Drawing.Point(6, 28);
+            this.lbSelecionarCliente.Name = "lbSelecionarCliente";
+            this.lbSelecionarCliente.Size = new System.Drawing.Size(107, 16);
+            this.lbSelecionarCliente.TabIndex = 6;
+            this.lbSelecionarCliente.Text = "Informe o cliente:";
             // 
-            // lbEnderecoCliente
+            // lbDataTexto
             // 
-            this.lbEnderecoCliente.AutoSize = true;
-            this.lbEnderecoCliente.Location = new System.Drawing.Point(6, 83);
-            this.lbEnderecoCliente.Name = "lbEnderecoCliente";
-            this.lbEnderecoCliente.Size = new System.Drawing.Size(252, 16);
-            this.lbEnderecoCliente.TabIndex = 9;
-            this.lbEnderecoCliente.Text = "Informe o endereço do cliente (Opcional):";
+            this.lbDataTexto.AutoSize = true;
+            this.lbDataTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDataTexto.Location = new System.Drawing.Point(531, 9);
+            this.lbDataTexto.Name = "lbDataTexto";
+            this.lbDataTexto.Size = new System.Drawing.Size(87, 20);
+            this.lbDataTexto.TabIndex = 10;
+            this.lbDataTexto.Text = "Data atual:";
+            // 
+            // lbDataAtual
+            // 
+            this.lbDataAtual.AutoSize = true;
+            this.lbDataAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDataAtual.Location = new System.Drawing.Point(624, 9);
+            this.lbDataAtual.Name = "lbDataAtual";
+            this.lbDataAtual.Size = new System.Drawing.Size(99, 20);
+            this.lbDataAtual.TabIndex = 11;
+            this.lbDataAtual.Text = "dd/MM/yyyy";
             // 
             // FormVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(758, 450);
+            this.Controls.Add(this.lbDataAtual);
+            this.Controls.Add(this.lbDataTexto);
             this.Controls.Add(this.gbFinalizarPedido);
             this.Controls.Add(this.gbAdicionarProdutos);
             this.Controls.Add(this.lbValorTotal);
@@ -254,5 +278,7 @@
         private System.Windows.Forms.Label lbSelecionarCliente;
         private System.Windows.Forms.Label lbEnderecoCliente;
         private System.Windows.Forms.TextBox tBoxEnderecoCliente;
+        private System.Windows.Forms.Label lbDataTexto;
+        private System.Windows.Forms.Label lbDataAtual;
     }
 }

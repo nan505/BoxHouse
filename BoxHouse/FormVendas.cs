@@ -16,6 +16,7 @@ namespace BoxHouse
         BindingList<Produtos> inventarioProdutos = new BindingList<Produtos>();
 
         double valorTotal = 0;
+        string dataAtualDiaMesAno = DateTime.Now.ToString("dd/MM/yyyy");
         public FormVendas()
         {
             InitializeComponent();
@@ -31,6 +32,7 @@ namespace BoxHouse
             dgvProdutosAdicionados.DataSource = listaProdutos;
             cbSelecionarCliente.DataSource = ListaClientes.ClientesCadastrados.Select(p => p.NomeCliente).ToList();
             cbSelecionarCliente.SelectedIndex = -1;
+            lbDataAtual.Text = dataAtualDiaMesAno;
         }
 
         private void fnLimparForms()
@@ -97,7 +99,8 @@ namespace BoxHouse
                     }
                     else
                     {
-                        Entregas cadastroNovaEntrega = new Entregas(nomeClienteEntrega, enderecoEntrega, statusEntrega);
+                        Entregas cadastroNovaEntrega = new Entregas(nomeClienteEntrega, enderecoEntrega, 
+                            dataAtualDiaMesAno, statusEntrega);
                         ListaEntregas.EntregasCadastradas.Add(cadastroNovaEntrega);
 
                         MessageBox.Show($"O pedido de {nomeClienteEntrega} foi adicionado para entrega com sucesso!",

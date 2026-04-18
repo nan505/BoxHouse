@@ -12,6 +12,9 @@ namespace BoxHouse
 {
     public partial class FormEntregas : Form
     {
+
+        string dataAtualDiaMesAno = DateTime.Now.ToString("dd/MM/yyyy");
+
         public FormEntregas()
         {
             InitializeComponent();
@@ -20,13 +23,14 @@ namespace BoxHouse
 
             cbClientesCadastrados.SelectedIndex = -1;
 
-            Entregas e1 = new Entregas("Gregory House", "Princeton Plainsboro, 321", "Pendente");
-            Entregas e2 = new Entregas("Alphonse Elric", "Rua dos Bobos, 123", "Saiu para entrega");
+            Entregas e1 = new Entregas("Gregory House", "Princeton Plainsboro, 321", "25/03/2025", "Pendente");
+            Entregas e2 = new Entregas("Alphonse Elric", "Rua dos Bobos, 123", "16/04/2026", "Saiu para entrega");
 
             ListaEntregas.EntregasCadastradas.Add(e1);
             ListaEntregas.EntregasCadastradas.Add(e2);
 
             dgvEntregasCadastradas.DataSource = ListaEntregas.EntregasCadastradas;
+            lbDataAtual.Text = dataAtualDiaMesAno;
         }
 
         private void btnAddEntrega_Click(object sender, EventArgs e)
@@ -40,10 +44,11 @@ namespace BoxHouse
             {
                 if(statusEntrega != "Entregue")
                 {
-                    Entregas novaEntrega = new Entregas(nomeClienteEntrega, enderecoEntrega, statusEntrega);
+                    Entregas novaEntrega = new Entregas(nomeClienteEntrega, enderecoEntrega, dataAtualDiaMesAno, statusEntrega);
 
                     MessageBox.Show($"A nova entrega para {nomeClienteEntrega} em {enderecoEntrega} com o status " +
-                        $"'{statusEntrega.ToLower()}' foi adicionada com sucesso.", "Mensagem de Aviso");
+                        $"'{statusEntrega.ToLower()}' foi adicionada na data {dataAtualDiaMesAno} com sucesso.",
+                        "Mensagem de Aviso");
 
                     ListaEntregas.EntregasCadastradas.Add(novaEntrega);
 

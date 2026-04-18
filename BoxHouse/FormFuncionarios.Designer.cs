@@ -37,8 +37,12 @@
             this.numValorVendas = new System.Windows.Forms.NumericUpDown();
             this.btnCalcularComissao = new System.Windows.Forms.Button();
             this.lbValorVendas = new System.Windows.Forms.Label();
+            this.gbCadastrarFuncionario = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numValorVendas)).BeginInit();
+            this.gbCadastrarFuncionario.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvFuncionarios
@@ -52,9 +56,9 @@
             // tBoxNomeFuncionario
             // 
             this.tBoxNomeFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBoxNomeFuncionario.Location = new System.Drawing.Point(12, 56);
+            this.tBoxNomeFuncionario.Location = new System.Drawing.Point(7, 58);
             this.tBoxNomeFuncionario.Name = "tBoxNomeFuncionario";
-            this.tBoxNomeFuncionario.Size = new System.Drawing.Size(199, 26);
+            this.tBoxNomeFuncionario.Size = new System.Drawing.Size(259, 26);
             this.tBoxNomeFuncionario.TabIndex = 1;
             // 
             // cbCargoFuncionario
@@ -66,59 +70,60 @@
             "Supervisor(a)",
             "Tosador(a)",
             "Adestrador(a)"});
-            this.cbCargoFuncionario.Location = new System.Drawing.Point(12, 108);
+            this.cbCargoFuncionario.Location = new System.Drawing.Point(6, 118);
             this.cbCargoFuncionario.Name = "cbCargoFuncionario";
-            this.cbCargoFuncionario.Size = new System.Drawing.Size(199, 28);
+            this.cbCargoFuncionario.Size = new System.Drawing.Size(260, 28);
             this.cbCargoFuncionario.TabIndex = 2;
             // 
             // lbNomeFuncionario
             // 
             this.lbNomeFuncionario.AutoSize = true;
-            this.lbNomeFuncionario.Location = new System.Drawing.Point(9, 40);
+            this.lbNomeFuncionario.Location = new System.Drawing.Point(4, 35);
             this.lbNomeFuncionario.Name = "lbNomeFuncionario";
-            this.lbNomeFuncionario.Size = new System.Drawing.Size(108, 13);
+            this.lbNomeFuncionario.Size = new System.Drawing.Size(159, 20);
             this.lbNomeFuncionario.TabIndex = 3;
             this.lbNomeFuncionario.Text = "Nome do funcionário:";
             // 
             // lbCargoFuncionario
             // 
             this.lbCargoFuncionario.AutoSize = true;
-            this.lbCargoFuncionario.Location = new System.Drawing.Point(9, 92);
+            this.lbCargoFuncionario.Location = new System.Drawing.Point(3, 95);
             this.lbCargoFuncionario.Name = "lbCargoFuncionario";
-            this.lbCargoFuncionario.Size = new System.Drawing.Size(108, 13);
+            this.lbCargoFuncionario.Size = new System.Drawing.Size(160, 20);
             this.lbCargoFuncionario.TabIndex = 4;
             this.lbCargoFuncionario.Text = "Cargo do funcionário:";
             // 
             // btnCadastrarFuncionario
             // 
             this.btnCadastrarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(12, 154);
+            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(180, 174);
             this.btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
-            this.btnCadastrarFuncionario.Size = new System.Drawing.Size(104, 34);
+            this.btnCadastrarFuncionario.Size = new System.Drawing.Size(212, 34);
             this.btnCadastrarFuncionario.TabIndex = 5;
-            this.btnCadastrarFuncionario.Text = "Cadastrar";
+            this.btnCadastrarFuncionario.Text = "Cadastrar novo funcionário";
             this.btnCadastrarFuncionario.UseVisualStyleBackColor = true;
             this.btnCadastrarFuncionario.Click += new System.EventHandler(this.btnCadastrarFuncionario_Click);
             // 
             // numValorVendas
             // 
             this.numValorVendas.DecimalPlaces = 2;
-            this.numValorVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numValorVendas.Location = new System.Drawing.Point(440, 221);
+            this.numValorVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numValorVendas.Location = new System.Drawing.Point(6, 52);
             this.numValorVendas.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.numValorVendas.Name = "numValorVendas";
-            this.numValorVendas.Size = new System.Drawing.Size(191, 26);
+            this.numValorVendas.Size = new System.Drawing.Size(336, 29);
             this.numValorVendas.TabIndex = 6;
             // 
             // btnCalcularComissao
             // 
-            this.btnCalcularComissao.Location = new System.Drawing.Point(637, 221);
+            this.btnCalcularComissao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcularComissao.Location = new System.Drawing.Point(191, 102);
             this.btnCalcularComissao.Name = "btnCalcularComissao";
-            this.btnCalcularComissao.Size = new System.Drawing.Size(151, 26);
+            this.btnCalcularComissao.Size = new System.Drawing.Size(151, 29);
             this.btnCalcularComissao.TabIndex = 7;
             this.btnCalcularComissao.Text = "Calcular comissão";
             this.btnCalcularComissao.UseVisualStyleBackColor = true;
@@ -127,32 +132,58 @@
             // lbValorVendas
             // 
             this.lbValorVendas.AutoSize = true;
-            this.lbValorVendas.Location = new System.Drawing.Point(437, 205);
+            this.lbValorVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbValorVendas.Location = new System.Drawing.Point(6, 33);
             this.lbValorVendas.Name = "lbValorVendas";
-            this.lbValorVendas.Size = new System.Drawing.Size(157, 13);
+            this.lbValorVendas.Size = new System.Drawing.Size(302, 16);
             this.lbValorVendas.TabIndex = 8;
-            this.lbValorVendas.Text = "Valor de vendas do funcionário:";
+            this.lbValorVendas.Text = "Valor total de vendas do funcionário selecionado:";
+            // 
+            // gbCadastrarFuncionario
+            // 
+            this.gbCadastrarFuncionario.Controls.Add(this.cbCargoFuncionario);
+            this.gbCadastrarFuncionario.Controls.Add(this.tBoxNomeFuncionario);
+            this.gbCadastrarFuncionario.Controls.Add(this.lbNomeFuncionario);
+            this.gbCadastrarFuncionario.Controls.Add(this.lbCargoFuncionario);
+            this.gbCadastrarFuncionario.Controls.Add(this.btnCadastrarFuncionario);
+            this.gbCadastrarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbCadastrarFuncionario.Location = new System.Drawing.Point(12, 12);
+            this.gbCadastrarFuncionario.Name = "gbCadastrarFuncionario";
+            this.gbCadastrarFuncionario.Size = new System.Drawing.Size(398, 214);
+            this.gbCadastrarFuncionario.TabIndex = 9;
+            this.gbCadastrarFuncionario.TabStop = false;
+            this.gbCadastrarFuncionario.Text = "Cadastro de funcionário:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lbValorVendas);
+            this.groupBox1.Controls.Add(this.numValorVendas);
+            this.groupBox1.Controls.Add(this.btnCalcularComissao);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(440, 194);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(348, 141);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cálculo de comissão";
             // 
             // FormFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbValorVendas);
-            this.Controls.Add(this.btnCalcularComissao);
-            this.Controls.Add(this.numValorVendas);
-            this.Controls.Add(this.btnCadastrarFuncionario);
-            this.Controls.Add(this.lbCargoFuncionario);
-            this.Controls.Add(this.lbNomeFuncionario);
-            this.Controls.Add(this.cbCargoFuncionario);
-            this.Controls.Add(this.tBoxNomeFuncionario);
+            this.ClientSize = new System.Drawing.Size(800, 347);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbCadastrarFuncionario);
             this.Controls.Add(this.dgvFuncionarios);
             this.Name = "FormFuncionarios";
             this.Text = "Box House - Funcionários";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numValorVendas)).EndInit();
+            this.gbCadastrarFuncionario.ResumeLayout(false);
+            this.gbCadastrarFuncionario.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -167,5 +198,7 @@
         private System.Windows.Forms.NumericUpDown numValorVendas;
         private System.Windows.Forms.Button btnCalcularComissao;
         private System.Windows.Forms.Label lbValorVendas;
+        private System.Windows.Forms.GroupBox gbCadastrarFuncionario;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
