@@ -29,6 +29,8 @@ namespace BoxHouse
             inventarioProdutos.Add(p3);
 
             dgvProdutosAdicionados.DataSource = listaProdutos;
+            cbSelecionarCliente.DataSource = ListaClientes.ClientesCadastrados.Select(p => p.NomeCliente).ToList();
+            cbSelecionarCliente.SelectedIndex = -1;
         }
 
         private void fnLimparForms()
@@ -63,6 +65,56 @@ namespace BoxHouse
             else
             {
                 MessageBox.Show("Preencha todos os campos corretamente.", "Mensagem de Aviso");
+            }
+        }
+
+        private void fnLimparVendas()
+        {
+            cbSelecionarProdutos.SelectedIndex = -1;
+            numQuantidade.Value = 1;
+            listaProdutos.Clear();
+            cbSelecionarCliente.SelectedIndex = -1;
+            tBoxEnderecoCliente.Text = string.Empty;
+            dgvProdutosAdicionados.Refresh();
+        }
+
+        private void btnFinalizarPedido_Click(object sender, EventArgs e)
+        {
+            if (dgvProdutosAdicionados.Rows.Count > 0)
+            {
+                if(cbSelecionarCliente.Text != string.Empty)
+                {
+                    string nomeClienteEntrega = cbSelecionarCliente.Text;
+                    string enderecoEntrega = tBoxEnderecoCliente.Text;
+                    string statusEntrega = "Pendente";
+
+                    if (enderecoEntrega == string.Empty)
+                    {
+                        MessageBox.Show($"O pedido de {nomeClienteEntrega} foi finalizado com sucesso!", 
+                            "Mensagem de Aviso");
+
+                        fnLimparVendas();
+                    }
+                    else
+                    {
+                        Entregas cadastroNovaEntrega = new Entregas(nomeClienteEntrega, enderecoEntrega, statusEntrega);
+                        ListaEntregas.EntregasCadastradas.Add(cadastroNovaEntrega);
+
+                        MessageBox.Show($"O pedido de {nomeClienteEntrega} foi adicionado para entrega com sucesso!",
+                            "Mensagem de Aviso");
+
+                        fnLimparVendas();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Uma compra finalizada precisa ser atribuída a um cliente.", "Mensagem de Aviso");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ao menos um produto precisa ser adicionado para a compra ser finalizada.",
+                    "Mensagem de Aviso");
             }
         }
     }

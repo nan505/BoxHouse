@@ -39,9 +39,9 @@
             // btnVendas
             // 
             this.btnVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVendas.Location = new System.Drawing.Point(199, 231);
+            this.btnVendas.Location = new System.Drawing.Point(225, 184);
             this.btnVendas.Name = "btnVendas";
-            this.btnVendas.Size = new System.Drawing.Size(152, 34);
+            this.btnVendas.Size = new System.Drawing.Size(152, 78);
             this.btnVendas.TabIndex = 0;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.UseVisualStyleBackColor = true;
@@ -50,10 +50,10 @@
             // lbTitulo
             // 
             this.lbTitulo.AutoSize = true;
-            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitulo.Location = new System.Drawing.Point(12, 9);
+            this.lbTitulo.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitulo.Location = new System.Drawing.Point(267, 37);
             this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(172, 37);
+            this.lbTitulo.Size = new System.Drawing.Size(244, 55);
             this.lbTitulo.TabIndex = 1;
             this.lbTitulo.Text = "Box House";
             // 
@@ -61,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(320, 180);
+            this.label1.Location = new System.Drawing.Point(334, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 31);
             this.label1.TabIndex = 2;
@@ -70,9 +70,9 @@
             // btnClientes
             // 
             this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.Location = new System.Drawing.Point(357, 231);
+            this.btnClientes.Location = new System.Drawing.Point(383, 184);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(126, 34);
+            this.btnClientes.Size = new System.Drawing.Size(152, 78);
             this.btnClientes.TabIndex = 3;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
@@ -81,9 +81,9 @@
             // btnFuncionarios
             // 
             this.btnFuncionarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFuncionarios.Location = new System.Drawing.Point(199, 271);
+            this.btnFuncionarios.Location = new System.Drawing.Point(225, 268);
             this.btnFuncionarios.Name = "btnFuncionarios";
-            this.btnFuncionarios.Size = new System.Drawing.Size(152, 37);
+            this.btnFuncionarios.Size = new System.Drawing.Size(152, 78);
             this.btnFuncionarios.TabIndex = 4;
             this.btnFuncionarios.Text = "Funcionários";
             this.btnFuncionarios.UseVisualStyleBackColor = true;
@@ -92,9 +92,9 @@
             // btnEntregas
             // 
             this.btnEntregas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntregas.Location = new System.Drawing.Point(357, 271);
+            this.btnEntregas.Location = new System.Drawing.Point(383, 268);
             this.btnEntregas.Name = "btnEntregas";
-            this.btnEntregas.Size = new System.Drawing.Size(126, 37);
+            this.btnEntregas.Size = new System.Drawing.Size(152, 78);
             this.btnEntregas.TabIndex = 5;
             this.btnEntregas.Text = "Entregas";
             this.btnEntregas.UseVisualStyleBackColor = true;

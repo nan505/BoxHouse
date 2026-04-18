@@ -80,6 +80,7 @@
     </Compile>
     <Compile Include="Funcionarios.cs" />
     <Compile Include="ListaClientes.cs" />
+    <Compile Include="ListaEntregas.cs" />
     <Compile Include="Produtos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

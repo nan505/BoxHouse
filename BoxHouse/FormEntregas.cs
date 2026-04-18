@@ -12,8 +12,6 @@ namespace BoxHouse
 {
     public partial class FormEntregas : Form
     {
-        BindingList<Entregas> entregasAdicionadas = new BindingList<Entregas>();
-
         public FormEntregas()
         {
             InitializeComponent();
@@ -25,10 +23,10 @@ namespace BoxHouse
             Entregas e1 = new Entregas("Gregory House", "Princeton Plainsboro, 321", "Pendente");
             Entregas e2 = new Entregas("Alphonse Elric", "Rua dos Bobos, 123", "Saiu para entrega");
 
-            entregasAdicionadas.Add(e1);
-            entregasAdicionadas.Add(e2);
+            ListaEntregas.EntregasCadastradas.Add(e1);
+            ListaEntregas.EntregasCadastradas.Add(e2);
 
-            dgvEntregasCadastradas.DataSource = entregasAdicionadas;
+            dgvEntregasCadastradas.DataSource = ListaEntregas.EntregasCadastradas;
         }
 
         private void btnAddEntrega_Click(object sender, EventArgs e)
@@ -47,7 +45,7 @@ namespace BoxHouse
                     MessageBox.Show($"A nova entrega para {nomeClienteEntrega} em {enderecoEntrega} com o status " +
                         $"'{statusEntrega.ToLower()}' foi adicionada com sucesso.", "Mensagem de Aviso");
 
-                    entregasAdicionadas.Add(novaEntrega);
+                    ListaEntregas.EntregasCadastradas.Add(novaEntrega);
 
                     fnLimparForms();
 
@@ -101,12 +99,12 @@ namespace BoxHouse
 
             if(statusFiltro != string.Empty)
             {
-                var filtroStatus = entregasAdicionadas.Where(p => p.StatusEntrega.Contains(statusFiltro)).ToList();
+                var filtroStatus = ListaEntregas.EntregasCadastradas.Where(p => p.StatusEntrega.Contains(statusFiltro)).ToList();
                 dgvEntregasCadastradas.DataSource = filtroStatus;
             }
             else
             {
-                dgvEntregasCadastradas.DataSource = entregasAdicionadas;
+                dgvEntregasCadastradas.DataSource = ListaEntregas.EntregasCadastradas;
             }
         }
 
@@ -119,7 +117,7 @@ namespace BoxHouse
 
         private void btnResetarFiltro_Click(object sender, EventArgs e)
         {
-            dgvEntregasCadastradas.DataSource = entregasAdicionadas;
+            dgvEntregasCadastradas.DataSource = ListaEntregas.EntregasCadastradas;
         }
     }
 }
