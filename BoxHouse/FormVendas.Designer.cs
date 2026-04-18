@@ -162,7 +162,7 @@
             this.cbSelecionarCliente.FormattingEnabled = true;
             this.cbSelecionarCliente.Location = new System.Drawing.Point(6, 47);
             this.cbSelecionarCliente.Name = "cbSelecionarCliente";
-            this.cbSelecionarCliente.Size = new System.Drawing.Size(283, 28);
+            this.cbSelecionarCliente.Size = new System.Drawing.Size(313, 28);
             this.cbSelecionarCliente.TabIndex = 5;
             // 
             // gbFinalizarPedido
@@ -185,16 +185,16 @@
             this.lbEnderecoCliente.AutoSize = true;
             this.lbEnderecoCliente.Location = new System.Drawing.Point(6, 83);
             this.lbEnderecoCliente.Name = "lbEnderecoCliente";
-            this.lbEnderecoCliente.Size = new System.Drawing.Size(252, 16);
+            this.lbEnderecoCliente.Size = new System.Drawing.Size(275, 16);
             this.lbEnderecoCliente.TabIndex = 9;
-            this.lbEnderecoCliente.Text = "Informe o endereço do cliente (Opcional):";
+            this.lbEnderecoCliente.Text = "Informe o endereço (Para cadastrar entrega):";
             // 
             // tBoxEnderecoCliente
             // 
             this.tBoxEnderecoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tBoxEnderecoCliente.Location = new System.Drawing.Point(6, 102);
             this.tBoxEnderecoCliente.Name = "tBoxEnderecoCliente";
-            this.tBoxEnderecoCliente.Size = new System.Drawing.Size(283, 26);
+            this.tBoxEnderecoCliente.Size = new System.Drawing.Size(313, 26);
             this.tBoxEnderecoCliente.TabIndex = 8;
             // 
             // btnFinalizarPedido
