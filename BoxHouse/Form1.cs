@@ -22,6 +22,20 @@ namespace BoxHouse
 
             clientesCadastrados.Add(c1);
             clientesCadastrados.Add(c2);
+
+            Entregas e1 = new Entregas("Gregory House", "Princeton Plainsboro, 321", "25/03/2025", "Pendente");
+            Entregas e2 = new Entregas("Alphonse Elric", "Rua dos Bobos, 123", "16/04/2026", "Saiu para entrega");
+
+            ListaEntregas.EntregasCadastradas.Add(e1);
+            ListaEntregas.EntregasCadastradas.Add(e2);
+
+            Funcionarios f1 = new Funcionarios("Lucas", "Supervisor(a)");
+            Funcionarios f2 = new Funcionarios("Laysla", "Tosador(a)");
+            Funcionarios f3 = new Funcionarios("Einstein", "Adestrador(a)");
+
+            ListaFuncionarios.FuncionariosCadastrados.Add(f1);
+            ListaFuncionarios.FuncionariosCadastrados.Add(f2);
+            ListaFuncionarios.FuncionariosCadastrados.Add(f3);
         }
 
         private void btnVendas_Click(object sender, EventArgs e)

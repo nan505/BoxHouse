@@ -12,19 +12,10 @@ namespace BoxHouse
 {
     public partial class FormFuncionarios : Form
     {
-        BindingList<Funcionarios> funcionariosCadastrados = new BindingList<Funcionarios>();
-
+        BindingList<Funcionarios> funcionariosCadastrados = ListaFuncionarios.FuncionariosCadastrados;
         public FormFuncionarios()
         {
             InitializeComponent();
-
-            Funcionarios f1 = new Funcionarios("Lucas", "Supervisor(a)");
-            Funcionarios f2 = new Funcionarios("Laysla", "Tosador(a)");
-            Funcionarios f3 = new Funcionarios("Einstein", "Adestrador(a)");
-
-            funcionariosCadastrados.Add(f1);
-            funcionariosCadastrados.Add(f2);
-            funcionariosCadastrados.Add(f3);
 
             tBoxNomeFuncionario.Focus();
             dgvFuncionarios.DataSource = funcionariosCadastrados;

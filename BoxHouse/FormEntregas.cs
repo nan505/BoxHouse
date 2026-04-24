@@ -23,12 +23,6 @@ namespace BoxHouse
 
             cbClientesCadastrados.SelectedIndex = -1;
 
-            Entregas e1 = new Entregas("Gregory House", "Princeton Plainsboro, 321", "25/03/2025", "Pendente");
-            Entregas e2 = new Entregas("Alphonse Elric", "Rua dos Bobos, 123", "16/04/2026", "Saiu para entrega");
-
-            ListaEntregas.EntregasCadastradas.Add(e1);
-            ListaEntregas.EntregasCadastradas.Add(e2);
-
             dgvEntregasCadastradas.DataSource = ListaEntregas.EntregasCadastradas;
             lbDataAtual.Text = dataAtualDiaMesAno;
         }
