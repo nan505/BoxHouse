@@ -72,7 +72,8 @@ namespace BoxHouse
             
             if(pesquisaInicial != string.Empty)
             {
-                var filtroPesquisa = clientesCadastrados.Where(p => p.NomeCliente.ToLower().Contains(pesquisaInicial.ToLower())).ToList();
+                List<Clientes> filtroPesquisa = clientesCadastrados.
+                    Where(p => p.NomeCliente.ToLower().Contains(pesquisaInicial.ToLower())).ToList();
                 dgvClientesCadastrados.DataSource = filtroPesquisa;
             }
             else
